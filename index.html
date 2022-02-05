@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css" class="css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title"> Survey Form</h1>
+
+            <p id="description">Thank you for taking out time to fill this questionnaire!</p>
+        </header>
+
+        <form action=" " id="survey-form">
+            <!--form-name-->
+            <div class="form-group">
+                <label for="name">Enter your name</label>
+                <input type="text" class="formControl" id="name" placeholder="Enter your name required">
+            </div>
+
+            <!--form email-->
+            <div class="form-group">
+                <label for="email">Enter your email address</label>
+                <input type="email" class="formControl" id="email" placeholder="Enter your email required">
+            </div>
+            <!--form number---->
+            <div class="form-group"> <label for="phone">Enter your number</label>
+                <input type="number" min="4" max="8" class="formControl" id="phone" placeholder="Enter number required">
+            </div>
+
+            <!---select selection-->
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role</p>
+                <select id="dropdown" class="formControl" required>
+                <option value="" disabledselected>Select your current role</option>
+                <option value="student">Student</option>
+
+                <option value="teacher">Teacher</option>
+
+                <option value="others">Others</option>
+            </select>
+            </div>
+            <!--rado button-->
+            <div class="form-group">
+                <p id="quest">How you come to know about JAYDRAYL HUB</p>
+                <label for="">
+                <input type="radio"
+                name="source"
+                value="friends"
+                class="inputRadio"
+                checked>Friends
+            </label>
+                <label for="">
+                <input type="radio"
+                name="source"
+                value="instagram-ads"
+                class="inputRadio"
+                >Instagram Ads
+            </label>
+                <label for="">
+                <input type="radio"
+                name="source"
+                value="facebook-ads"
+                class="inputRadio"
+                >Facebook Ads
+            </label>
+                <label for="">
+                <input type="radio"
+                name="source"
+                value="twitter-ads"
+                class="inputRadio"
+                >Twitter Ads
+            </label>
+            </div>
+            <!---checkbox selection-->
+            <div class="form-group">
+                <p id="quest">How do you want us to improve</p>
+                <label for="">
+                <input type="checkbox"
+                name="prefer"
+                class="checkbox"
+                value="back-end-dev">Back-end Developer
+            </label>
+                <label for="">
+                <input type="checkbox"
+                name="prefer"
+                class="checkbox"
+                value="front-end-dev">front-end Developer
+            </label>
+                <label for="">
+                <input type="checkbox"
+                name="prefer"
+                class="checkbox"
+                value="mobile-app-dev">Mobile-App Developer
+            </label>
+                <label for="">
+                <input type="checkbox"
+                name="prefer"
+                class="checkbox"
+                value="full-stack-dev">Full-Stack Developer
+            </label>
+            </div>
+            <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feeback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
